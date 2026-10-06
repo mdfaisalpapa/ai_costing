@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-10-06 11:33:23.930804",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "work_order_no",
+  "decoded_workorder",
+  "shop",
+  "direct_hours",
+  "grand_total",
+  "section_break_section",
+  "ai_predicted_cost",
+  "variance_pct",
+  "probable_cause"
+ ],
+ "fields": [
+  {
+   "fieldname": "variance_pct",
+   "fieldtype": "Percent",
+   "label": "Variance Pct",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_section",
+   "fieldtype": "Section Break",
+   "label": "Section Break"
+  },
+  {
+   "fieldname": "ai_predicted_cost",
+   "fieldtype": "Currency",
+   "label": "AI Predicted Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "probable_cause",
+   "fieldtype": "Small Text",
+   "label": "Probable Cause",
+   "read_only": 1
+  },
+  {
+   "fieldname": "work_order_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Work Order No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "decoded_workorder",
+   "fieldtype": "Data",
+   "label": "Decoded Workorder"
+  },
+  {
+   "fieldname": "shop",
+   "fieldtype": "Data",
+   "label": "Shop"
+  },
+  {
+   "fieldname": "direct_hours",
+   "fieldtype": "Int",
+   "label": "Direct Hours"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-06 12:25:41.486744",
+ "modified_by": "Administrator",
+ "module": "Workshop and PU Costing using AI",
+ "name": "Workshop Workorder",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
